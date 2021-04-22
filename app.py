@@ -13,7 +13,6 @@ with open("Tfidf.pkl", 'rb') as data:
 with open("model.pkl", 'rb') as data2:
     model = pickle.load(data2)
 
-
 def requestResults(name):
     tweets = get_related_tweets(name)
     tweets = pd.DataFrame(tweets)
