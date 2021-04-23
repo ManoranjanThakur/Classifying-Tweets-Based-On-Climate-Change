@@ -16,7 +16,6 @@ authentication = tweepy.OAuthHandler(api_key, api_secret_key)
 authentication.set_access_token(access_token, access_token_secret)
 api = tweepy.API(authentication, wait_on_rate_limit=True)
 
-
 def get_related_tweets(text_query):
     # list to store tweets
     tweets_list = []
